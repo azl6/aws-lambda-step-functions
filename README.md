@@ -7,3 +7,9 @@
 **Memory increase**
 
 ![image](https://user-images.githubusercontent.com/80921933/224430677-ef072590-6297-4aa0-aab5-a91fdb58e7d4.png)
+
+**Pricing and optimization**
+
+Can also use the **Lambda Power Tuner** tool instead of the **Compute Optimizer**
+
+![image](https://user-images.githubusercontent.com/80921933/224431776-0df38a65-09f5-47f4-8cd5-ef0c05f59435.png)
