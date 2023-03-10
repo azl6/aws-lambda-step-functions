@@ -13,3 +13,7 @@
 Can also use the **Lambda Power Tuner** tool instead of the **Compute Optimizer**
 
 ![image](https://user-images.githubusercontent.com/80921933/224431776-0df38a65-09f5-47f4-8cd5-ef0c05f59435.png)
+
+**Minimizing cold start**
+
+![image](https://user-images.githubusercontent.com/80921933/224434036-ef3f2243-8080-4417-befd-fa725129c2ae.png)
