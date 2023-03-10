@@ -42,6 +42,11 @@ Suppose we have **Function A** and reserve 100 requests for it. That means, the 
 
 Used to have conteiners always on to run your function and therefore bypass cold-start.
 
+**Provisioned concurrency "depends" on the existence of reserved concurrency.**
+
 ![image](https://user-images.githubusercontent.com/80921933/224441528-8c933dc3-4405-4523-8a2c-0f9e4a90d757.png)
+
+![image](https://user-images.githubusercontent.com/80921933/224441848-e886a351-7f4d-45d0-a3e7-b4f1f7915e6a.png)
+
 
 
