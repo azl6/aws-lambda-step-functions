@@ -26,3 +26,16 @@ Can also use the **Lambda Power Tuner** tool instead of the **Compute Optimizer*
 
 ![image](https://user-images.githubusercontent.com/80921933/224436101-0c384332-4b21-4437-ad1b-9389236979a2.png)
 
+# Unreserved concurrency
+
+This is the default behaviour of Lambda. By default, we can have 1000 in-flight requests per account per region. It means that the 1001st request will be throttled.
+
+# Reserved concurrency
+
+This is when we reserve concurrency for a given function. 
+
+Suppose we have **Function A** and reserve 100 requests for it. That means, the rest of the functions will have 900 concurrent requests available, and **Function A** will have a hard-limit of 100 (the 101st request will be throttled)
+
+![image](https://user-images.githubusercontent.com/80921933/224440801-6ea6d571-04ab-4385-98cc-ec8792a5da76.png)
+
+
