@@ -22,6 +22,10 @@ Can also use the **Lambda Power Tuner** tool instead of the **Compute Optimizer*
 
 ![image](https://user-images.githubusercontent.com/80921933/224434036-ef3f2243-8080-4417-befd-fa725129c2ae.png)
 
+**Concurrency**
+
+![image](https://user-images.githubusercontent.com/80921933/224443556-8e6db83d-1c00-48dd-bf2e-e61d6ea33142.png)
+
 # Concurrency types
 
 ![image](https://user-images.githubusercontent.com/80921933/224436101-0c384332-4b21-4437-ad1b-9389236979a2.png)
