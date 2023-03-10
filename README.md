@@ -38,4 +38,10 @@ Suppose we have **Function A** and reserve 100 requests for it. That means, the 
 
 ![image](https://user-images.githubusercontent.com/80921933/224440801-6ea6d571-04ab-4385-98cc-ec8792a5da76.png)
 
+# Provisioned concurrency
+
+Used to have conteiners always on to run your function and therefore bypass cold-start.
+
+![image](https://user-images.githubusercontent.com/80921933/224441528-8c933dc3-4405-4523-8a2c-0f9e4a90d757.png)
+
 
