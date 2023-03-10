@@ -1,3 +1,7 @@
+# Practices that I want to do
+
+1. Throw a CW alarm on the number of concurrent executions and throttling of a lambda function
+
 # Pro tips
 
 **Maximum duration and timeouts**
