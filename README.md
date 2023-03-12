@@ -52,5 +52,18 @@ Used to have conteiners always on to run your function and therefore bypass cold
 
 ![image](https://user-images.githubusercontent.com/80921933/224441848-e886a351-7f4d-45d0-a3e7-b4f1f7915e6a.png)
 
+# Lambda versions and aliases
+
+We can have different versions of the same Lambda function:
+
+![image](https://user-images.githubusercontent.com/80921933/224557915-0e8b58af-0f77-405d-839a-6202165f90e3.png)
+
+We can also alias our versions with a certain string, such as **prod**:
+
+![image](https://user-images.githubusercontent.com/80921933/224558048-ffb3e62c-28c5-4628-b00f-68f727a3927c.png)
+
+Aliases can be used to either associate this string with a version, or to balance a % of traffic to two versions simultaneously (e.g the image above, that show 80% of traffic going to V1 and 20% going to V2)
+
+
 
 
