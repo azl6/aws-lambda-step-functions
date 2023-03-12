@@ -115,3 +115,34 @@ After that, we can go to **Metrics -> All metrics**, select the namespace create
 
 ![image](https://user-images.githubusercontent.com/80921933/224564248-e99fca68-3433-435a-a996-664a7c4f6d93.png)
 
+# Lambda Power Tuning tool
+
+This tool can be used to generate a graph that will help us to choose the best possible option of memory setup for a Lambda function.
+
+1. Go to https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:451282441545:applications~aws-lambda-power-tuning
+2. Click in the following button: <br>
+    ![image](https://user-images.githubusercontent.com/80921933/224567655-0c202b86-b6c6-4e77-9425-85c9996e4e62.png)
+3. At the end of the opened page, we check the box and click in **Deploy**: <br>
+    ![image](https://user-images.githubusercontent.com/80921933/224567761-d0b1085b-733b-4e6c-ab89-e1187e6d8a55.png)
+4. The application takes some time to deploy. We can check the progress in the **Applications** section, choosing our deployed application: <br>
+    ![image](https://user-images.githubusercontent.com/80921933/224567926-7f102f3d-7d9f-409f-91a7-957942e5b2b4.png)
+5. After the **Create in progress** turns into **Create complete**, we can go to the **Step Functions** service and choose the generated state-machine <br>
+    ![image](https://user-images.githubusercontent.com/80921933/224568084-6c592a2f-66e2-4bea-81e6-443df53d49e4.png)
+6. After choosing the state-machine, we start an execution and provide the following JSON (also documented in the first link of this tutorial) + our Lambda function ARN:
+
+```json
+{
+    "lambdaARN": "your-lambda-function-arn",
+    "powerValues": [128, 256, 512, 1024, 2048, 3008],
+    "num": 10,
+    "payload": "{}",
+    "parallelInvocation": true,
+    "strategy": "cost"
+}
+```
+
+7. Finally, after all steps finish, we can click in the **Optimizer** step, go to the **Output** section and copy the URL to a browser to see the results. <br>
+    ![image](https://user-images.githubusercontent.com/80921933/224568742-86fbccf9-19ab-4c7c-aab1-6edf67634604.png)
+
+
+
