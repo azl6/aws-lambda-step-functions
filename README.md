@@ -3,7 +3,7 @@
 1. Throw a CW alarm on the number of concurrent executions and throttling of a lambda function
 2. Integrate Lambda with SQS queue to automatically process messages as soon as they reach SQS
 3. Integrate Lambda with S3 Event Notifications
-4. Use Lambda Layers for a lib that is not automatically available.
+4. Use Lambda Layers for a lib that is not automatically available. (And create a Lambda Layer section in this repo!)
 
 # Pro tips
 
