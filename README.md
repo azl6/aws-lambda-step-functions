@@ -64,6 +64,18 @@ We can also alias our versions with a certain string, such as **prod**:
 
 Aliases can be used to either associate this string with a version, or to balance a % of traffic to two versions simultaneously (e.g the image above, that show 80% of traffic going to V1 and 20% going to V2)
 
+# Environment variables
 
+We can provide environment variables to our Lambda functions.
 
+```python
+import json
+import os
+
+def lambda_handler(event, context):
+    myEnv = os.environ["AWS_REGION"] # Python's way of grabbing env variables
+    print(myEnv)
+```
+
+`AWS_REGION` is a pre-built environment variable. We can provide our own by going to **Configuration -> Environment Variables** and adding our desired environment variables.
 
