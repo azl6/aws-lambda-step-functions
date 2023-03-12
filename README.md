@@ -1,6 +1,8 @@
 # Practices that I want to do
 
 1. Throw a CW alarm on the number of concurrent executions and throttling of a lambda function
+2. Integrate Lambda with SQS queue to automatically process messages as soon as they reach SQS
+3. Integrate Lambda with S3 Event Notifications
 
 # Pro tips
 
