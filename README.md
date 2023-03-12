@@ -79,3 +79,9 @@ def lambda_handler(event, context):
 
 `AWS_REGION` is a pre-built environment variable. We can provide our own by going to **Configuration -> Environment Variables** and adding our desired environment variables.
 
+# Important Lambda metrics
+
+![image](https://user-images.githubusercontent.com/80921933/224559737-fe1697ca-97a7-43ec-ba35-ab49c717db1e.png)
+
+![image](https://user-images.githubusercontent.com/80921933/224559753-fecd7eb2-8ba7-4b3a-8cfe-8fc932fd1eeb.png)
+
