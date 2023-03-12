@@ -85,3 +85,33 @@ def lambda_handler(event, context):
 
 ![image](https://user-images.githubusercontent.com/80921933/224559753-fecd7eb2-8ba7-4b3a-8cfe-8fc932fd1eeb.png)
 
+# Lambda metrics filter
+
+By default, **prints in Lambda write to CloudWatch Logs**.
+
+That means that we can define a default "error template" and print them when an error happens, **because this is more cost-effective than using the cloudwatchClient API call**.
+
+```python
+import json
+
+def lambda_handler(event, context):
+    
+    # Whoops, error happened. Let's write this to CW printing it to stdout.
+    print("UploadError 1")    
+```
+
+Now, in CW, we can go to **Logs Groups -> \<OUR_FUNCTION_LOG_GROUP> -> Metric filters -> Create metric filter**
+
+In the **Filter pattern** field, we can fill the following syntax:
+
+![image](https://user-images.githubusercontent.com/80921933/224563642-3b2d4b2b-1fb9-48e1-a190-174dc7c1ea7d.png)
+
+Let's fill the rest of the options, with the following observation:
+
+- The **Metric value** field should be **$value** (because we named it value in the Filter pattern)
+- The **Unit** field should be **Count**
+
+After that, we can go to **Metrics -> All metrics**, select the namespace created for the function, keep going until we find the metric, and when we do, throw the metric into the graph. **Remember:** the field **Statistic** in the **Graphed metrics** section should be **SUM**
+
+![image](https://user-images.githubusercontent.com/80921933/224564248-e99fca68-3433-435a-a996-664a7c4f6d93.png)
+
