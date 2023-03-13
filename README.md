@@ -149,5 +149,10 @@ This tool can be used to generate a graph that will help us to choose the best p
 7. Finally, after all steps finish, we can click in the **Optimizer** step, go to the **Output** section and copy the URL to a browser to see the results. <br>
     ![image](https://user-images.githubusercontent.com/80921933/224568742-86fbccf9-19ab-4c7c-aab1-6edf67634604.png)
 
+# Creating IaC with CDK
 
+Initializing a directory with a sample CDK project
 
+```bash
+cdk init sample-app
+```
