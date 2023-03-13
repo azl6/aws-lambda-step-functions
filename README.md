@@ -5,6 +5,7 @@
 3. Integrate Lambda with S3 Event Notifications ✔️
 4. Use Lambda Layers for a lib that is not automatically available. (And create a Lambda Layer section in this repo!) ✔️
 5. Use EventBridge cron to trigger Lambda ✔️
+6. Integrate Lambda with API Gateway and retrieve clients of a database based on the customerId field provided
 
 # Pro tips
 
