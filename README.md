@@ -154,5 +154,5 @@ This tool can be used to generate a graph that will help us to choose the best p
 Initializing a directory with a sample CDK project
 
 ```bash
-cdk init sample-app
+cdk init APP_NAME --language LANGUAGE
 ```
