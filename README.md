@@ -5,7 +5,7 @@
 3. Integrate Lambda with S3 Event Notifications ✔️
 4. Use Lambda Layers for a lib that is not automatically available. (And create a Lambda Layer section in this repo!) ✔️
 5. Use EventBridge cron to trigger Lambda ✔️
-6. Integrate Lambda with API Gateway and retrieve clients of a database based on the customerId field provided
+6. Integrate Lambda with API Gateway and (CRUD) ✔️
 
 # Pro tips
 
@@ -148,6 +148,18 @@ This tool can be used to generate a graph that will help us to choose the best p
 
 7. Finally, after all steps finish, we can click in the **Optimizer** step, go to the **Output** section and copy the URL to a browser to see the results. <br>
     ![image](https://user-images.githubusercontent.com/80921933/224568742-86fbccf9-19ab-4c7c-aab1-6edf67634604.png)
+
+# Lambda layers
+
+Lambda layers are used to make libraries available in Lambda functions that were not previously available.
+
+The **pandas**, **numpy** or **mysql.connector** libs, for example, are not available out of the box.
+
+To make them available, we must:
+
+1. Run `pip install -t python/` (-t to specify the directory to install the lib. The directory must be named **python** for Python layers)
+2. Zip the **python** directory containing the desired lib with `zip -r python.zip python`
+3. Import the .zip into a Lambda layer, and start using it in your functions! With them, these libs will be available for importing
 
 # Creating IaC with CDK
 
